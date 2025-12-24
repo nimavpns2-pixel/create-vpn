@@ -224,7 +224,7 @@ function generateSubUrl(path, app, tag, singboxType) {
     app && url.searchParams.append('app', app);
 
     if (tag) {
-        url.hash = `💦 BPB ${tag}`;
+        url.hash = `BPB ${tag}`;
     }
 
     return singboxType

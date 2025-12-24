@@ -144,15 +144,15 @@ export async function getSbWarpConfig(request: Request, env: Env): Promise<Respo
     const chainTags: string[] = [];
     const outbounds: WireguardEndpoint[] = [];
     const selectorTags = [
-        "💦 Warp - اتصال خودکار✅",
-        "💦 WoW - اتصال خودکار✅"
+        "Warp - اتصال خودکار✅",
+        "WoW - اتصال خودکار✅"
     ];
 
     warpEndpoints.forEach((endpoint, index) => {
-        const warpTag = `💦 ${index + 1} - Warp 🇮🇷`;
+        const warpTag = `${index + 1} - Warp 🇮🇷`;
         proxyTags.push(warpTag);
 
-        const wowTag = `💦 ${index + 1} - WoW 🌍`;
+        const wowTag = `${index + 1} - WoW 🌍`;
         chainTags.push(wowTag);
 
         selectorTags.push(warpTag, wowTag);
